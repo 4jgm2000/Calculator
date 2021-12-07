@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #C29591;
+  overflow: hidden;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 50%;
+  transform: translate(0, -200%);
+  overflow: hidden;
+}
+
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.calculator .buttons {
+  height: 50px;
+  width: 25%;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+.calculator .inpCont {
+  height: 100px;
+  width: 100%;
+}
+.calculator .inpCont input {
+  height: 100px;
+  width: 100%;
+  direction: ltr;
+  font-size: larger;
+  background-color: #7D94B5;
+}
+
+.longWrapper {
+  display: flex;
+  width: 100%;
+}
+.longWrapper > section:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+.longWrapper > section:first-child > div {
+  flex: 1 0 33.33%;
+}
+.longWrapper > section:first-child > div:nth-child(4) {
+  flex-basis: 66.67%;
+}
+.longWrapper > section:last-child {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.longWrapper .tall {
+  width: 100%;
+  flex: 1;
+}
+
+@media (min-width: 321px) {
+  .calculator {
+    width: 320px;
+  }
+}
+
+/*# sourceMappingURL=sheet.css.map */
